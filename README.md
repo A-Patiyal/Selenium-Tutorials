@@ -127,16 +127,16 @@ These methods are mainly used when the web element is not identified with the he
 
 **Parent**
 
-** Child **
+**Child**
 
-** Ancestor **
+**Ancestor**
 
-** Descendant **
+**Descendant**
 
-** Following **
+**Following**
 
-** Following-sibling **
+**Following-sibling**
 
-** Preceding **
+**Preceding**
 
-** Preceding-sibling **
+**Preceding-sibling**
