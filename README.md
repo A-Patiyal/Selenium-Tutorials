@@ -60,7 +60,7 @@ Selenium Grid allows the execution of WebDriver scripts on remote machines by ro
 **Syntax:** `driver.findElements(By.className("class-name"));`
 
 #### 6. tagName
-**Syntax:** `driver.findElement(By.tagName("Tag-Name"));`
+**Syntax:** `driver.findElements(By.tagName("Tag-Name"));`
 
 ### CSS Selectors
 **Syntax:**	`driver.findElement(By.cssSelector("#user-name")).sendKeys("standard_user");`  '#' represents Id
