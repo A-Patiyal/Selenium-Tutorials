@@ -124,11 +124,19 @@ These methods are mainly used when the web element is not identified with the he
 #### Xpath Axes 
 
 ** Self **
+
 ** Parent **
+
 ** Child **
+
 ** Ancestor **
+
 ** Descendant **
+
 ** Following **
+
 ** Following-sibling **
+
 ** Preceding **
+
 ** Preceding-sibling **
