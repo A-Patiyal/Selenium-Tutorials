@@ -55,3 +55,63 @@ Selenium Grid allows the execution of WebDriver scripts on remote machines by ro
 
 #### 4. PartialLinkText
 **Syntax:** `driver.findElement(By.partialLinkText("Partial Text"));`
+
+#### 5. className
+**Syntax:** `driver.findElements(By.className("class-name"));`
+
+#### 6. tagName
+**Syntax:** `driver.findElement(By.tagName("Tag-Name"));`
+
+### CSS Selectors
+**Syntax:**	`driver.findElement(By.cssSelector("#user-name")).sendKeys("standard_user");`  '#' represents Id
+
+**Syntax:** `driver.findElement(By.cssSelector("input.form_input[id=user-name]")).sendKeys("standard_user");`
+**Here 'input' represents TagName, '.' represents class name, '#' '[id=user-name]' represents attribute with value
+
+### Xpath Locators
+** 1. Absolute or Full Xpath** Starts with '/' 
+**Syntax:** `/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]`
+** Not Recommanded as using complete element address from starting point to till element.**
+
+** 2. Relative or Partial Xpath** Starts with '//'
+### Relative Xpath Options
+
+1. or
+**Syntax:** `//tagname[@(attribute)='value' or @(attribute='value')]`
+**Example** `driver.findElement(By.xpath("//*[@class='classInfo' or @type='attType']"));`
+Returns WebElementt if atleast one of the attribute is correct 
+
+2. and
+**Syntax:** `//tagname[@(attribute)='value' and @(attribute='value')]`
+**Example** `driver.findElement(By.xpath("//*[@class='classInfo' and @type='attType']"));`
+Returns WebElementt when both the attribute is correct 
+
+3. contains()
+**Syntax:** `//tagname[contains@(attribute),'value'];`
+Returns WebElement if attribute is containing the value
+
+4. starts-with()
+**Syntax:** `//tagname[starts-with@(attribute),'value'];`
+Returns WebElement if starting with the given value (@(attribute), 'value'))  
+
+5. text()
+**Syntax:** `//tagname[text()='TextValue']
+
+6. chained Xpath
+**Syntax:** `//tagname[text()='TextValue']//tagname[@attribute='value']
+
+### Xpath-Axes Locators
+Xpath axes are those axes that are used to search for the multiple nodes in the XML documents from the current node context.
+These methods are mainly used when the web element is not identified with the help of ID, name, class name, link text, and Css selectors.
+
+#### Xpath Axes 
+
+** Self **
+** Parent **
+** Child **
+** Ancestor **
+** Descendant **
+** Following **
+** Following-sibling **
+** Preceding **
+** Preceding-sibling **
