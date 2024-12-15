@@ -2,18 +2,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.qa.ap</groupId>
-  <artifactId>selenium-webdriver</artifactId>
+  <groupId>ap.qa.wa</groupId>
+  <artifactId>Selenium-Tutorials</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>selenium-webdriver</name>
+  <name>Selenium-Tutorials</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>22</maven.compiler.source>
-    <maven.compiler.target>22</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -21,13 +19,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.20.0</version>
-      </dependency>
-      <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-      <dependency>
-        <groupId>commons-io</groupId>
-        <artifactId>commons-io</artifactId>
-        <version>2.16.1</version>
-        </dependency>
+      <version>4.27.0</version>
+    </dependency>
   </dependencies>
 </project>
